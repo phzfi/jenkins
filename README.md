@@ -3,6 +3,8 @@ Description
 Local Jenkins development environment based on docker.
 
 See Docker Hub: https://hub.docker.com/r/phzfi/jenkins/
+See https://github.com/jenkinsci/docker/
+Built on https://hub.docker.com/r/jenkins/jenkins/
 
 Requirements
 ------------
