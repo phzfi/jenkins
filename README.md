@@ -76,6 +76,9 @@ Build instructions
     docker tag abcdef123 phzfi/jenkins"
     docker push phzfi/jenkins
 
-Things
-------
+Things to know
+--------------
+    Life is not easy with docker. As Jenkins checks out the version control by commits,
+    you need to do local commits after each change that you want to build. However, you
+    don't need to push the changes to origin, local commits are good enough.
     
