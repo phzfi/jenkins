@@ -2,7 +2,9 @@ Description
 -----------
 Local Jenkins development environment based on docker.
 
-See Docker Hub: https://hub.docker.com/r/phzfi/jenkins/
+    See Docker Hub: https://hub.docker.com/r/phzfi/jenkins/
+    See https://github.com/jenkinsci/docker/
+    Built on https://hub.docker.com/r/jenkins/jenkins/
 
 Requirements
 ------------
@@ -37,7 +39,7 @@ Usage instructions
 
     Pipeline
 
-    Git repository location: file:////mnt/
+    Git repository location: file:////mnt/workspace
     
     Change the branch on Jenkins to the one you are developing currently i.e. */mybranch
 
@@ -61,6 +63,7 @@ Setting up JLNP Slave Node
     echo "jenkins ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
     mkdir /home/jenkins
     chown jenkins /home/jenkins
+    ln -s /home/phz/workspace /mnt/workspace
 
     Then launch JLNP agent as user jenkins
     su jenkins
